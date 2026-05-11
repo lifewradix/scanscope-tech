@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Scan Scope Technologies | Industrial NDT & Engineering Kenya</title>
+    <meta name="description" content="Nairobi's leader in Non-Destructive Testing (NDT). Certified audits for Aviation, Oil & Gas, and Defense. Expert engineering integrity inspections in Kenya.">
+    <meta name="keywords" content="NDT Kenya, Scan Scope Technologies, Industrial X-ray Nairobi, Pipeline Inspection Africa, Engineering Audits Kenya, ERESCO 4 NDT, Aviation NDT Kenya, Oil Pipeline Inspection">
+    <link rel="canonical" href="https://www.scanscope.co.ke" />
+
+    <meta property="og:title" content="Scan Scope Technologies | Precision NDT Kenya">
+    <meta property="og:description" content="Industrial engineering audits and NDT services across Africa. Precision Uncompromised.">
+    <meta property="og:type" content="website">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Scan Scope Technologies",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Cathy Flats, Kilimani",
+        "addressLocality": "Nairobi",
+        "addressCountry": "KE"
+      },
+      "url": "https://www.scanscope.co.ke",
+      "telephone": "+254722629859"
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+<body class="bg-[#050505] text-white">
+
+    <nav class="fixed top-0 w-full z-[1000] bg-black/80 backdrop-blur-xl border-b border-white/5 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <div class="flex items-center gap-3 cursor-pointer" onclick="showPage('home')">
+    <div class="sst-badge text-sm">SST</div>
+    <div class="hidden sm:block">
+        <h1 class="text-lg font-black uppercase tracking-tighter">Scan Scope</h1>
+        <p class="text-[7px] tech-font text-cyan-400 uppercase tracking-widest">Precision Uncompromised</p>
+    </div>
+</div>
+
+      <div class="hidden md:flex gap-8 tech-font text-[10px] uppercase font-bold text-gray-400">
+    <button onclick="showPage('home')" class="hover:text-cyan-400 transition-colors">Home</button>
+    
+    <button onclick="navToServices()" class="hover:text-cyan-400 transition-colors">Services</button>
+    
+    <button onclick="navToInventory()" class="hover:text-cyan-400 transition-colors">Inventory</button>
+    
+    <button onclick="scrollToContact()" class="hover:text-cyan-400 transition-colors">Contact</button>
+    
+    <button onclick="openEmergency()" class="text-cyan-400 border border-cyan-400/30 px-3 py-1 hover:bg-cyan-400 hover:text-black transition-all">Emergency</button>
+</div>
+
+        <button onclick="toggleMobileMenu()" class="md:hidden flex flex-col gap-1.5 z-[1100]">
+            <div id="bar1" class="w-6 h-0.5 bg-white transition-all"></div>
+            <div id="bar2" class="w-6 h-0.5 bg-white transition-all"></div>
+            <div id="bar3" class="w-6 h-0.5 bg-white transition-all"></div>
+        </button>
+    </div>
+
+  <div id="mobileMenu">
+    <button onclick="navAndClose('home')">01. Home</button>
+    <button onclick="navToServices()">02. Services</button> 
+    <button onclick="navAndClose('inventory')">03. Inventory</button>
+    <button onclick="scrollToContact()">04. Contact</button>
+    <button onclick="toggleMobileMenu(); openEmergency();" class="text-cyan-400 !border-none !mt-10">Emergency Audit</button>
+</div>
+</nav>
+
+<main id="home" class="page active">
+    <section class="relative min-h-screen flex items-center px-6 overflow-hidden">
+        <div class="scan-laser"></div>
+        
+       <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black z-10"></div>
+            
+            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80" 
+                 class="absolute inset-0 w-full h-full object-cover opacity-60">
+            
+            <img src="ndt2.jpg" 
+                 class="absolute right-0 w-1/2 h-full object-cover opacity-80 hidden lg:block" 
+                 style="mask-image: linear-gradient(to left, black, transparent);">
+        </div>
+        
+        <div class="max-w-7xl mx-auto relative z-20 pt-32 pb-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                
+                <div>
+                    <span class="tech-font text-cyan-400 text-xs mb-4 block tracking-[0.5em]">SYSTEM STATUS: OPERATIONAL</span>
+                    <h2 class="text-6xl md:text-8xl font-black uppercase leading-[0.85] tracking-tighter mb-8">
+                        SCANNED <br>
+                        <span class="text-transparent" style="-webkit-text-stroke: 1px #fff;">INTEGRITY.</span>
+                    </h2>
+                    
+                    <div class="flex flex-wrap gap-4">
+                        <button onclick="navToInventory()" class="bg-cyan-500 text-black px-8 py-4 font-black uppercase text-xs tracking-widest hover:bg-white transition-all">View Equipment</button>
+                        <button onclick="openEmergency()" class="border border-cyan-500 text-cyan-500 px-8 py-4 font-black uppercase text-xs tracking-widest hover:bg-cyan-500 hover:text-black transition-all">Emergency Audit</button>
+                    </div>
+                </div>
+
+                <div class="bg-black/40 backdrop-blur-md p-8 border-l-2 border-cyan-500">
+                    <h3 class="text-cyan-400 tech-font text-xs uppercase tracking-[0.4em] mb-4">// Established Integrity</h3>
+                    <h4 class="text-4xl font-black uppercase italic mb-6">Who Are We?</h4>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                        Established to bridge the gap in high-precision industrial auditing, <strong>Scan Scope Technologies</strong> provide the most technically advanced Non-Destructive Testing (NDT) services in East Africa.
+                    </p>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-8">
+                        We ensure every weld, joint, and structure is cleared for mission-critical operations, from deep-sea pipelines to tactical aircraft.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div>
+                            <span class="block text-2xl font-black text-white">2026</span>
+                            <span class="text-[9px] uppercase text-gray-500 tech-font">Current Tech Leader</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl font-black text-white">100%</span>
+                            <span class="text-[9px] uppercase text-gray-500 tech-font">Safety Record</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services-section" class="py-24 px-6 bg-black">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-black uppercase italic mb-4">Our Specialized Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image-placeholder">
+                        <img src="images/offshorepipeline.jpg" alt="Offshore Oil and Gas NDT" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-cyan-400 font-bold uppercase mb-3">1. Offshore Oil & Gas Pipeline Inspections</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">High-precision subsea weld inspections and internal corrosion monitoring in demanding marine environments.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image-placeholder">
+                        <img src="images/railway.jpeg" alt="Rail System Inspection" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-cyan-400 font-bold uppercase mb-3">2. NDT In Rail System</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Specialized track integrity audits and rolling stock testing to prevent fractures and ensure safety.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image-placeholder">
+                        <img src="images/energy scetor.jpeg" alt="Energy Sector Power Plant" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-cyan-400 font-bold uppercase mb-3">3. Energy Sector</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Structural health monitoring for power plants, including thermal stress analysis and boiler tube gauging.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image-placeholder">
+                        <img src="images/powerlines.jpeg" alt="High Voltage Powerlines" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-cyan-400 font-bold uppercase mb-3">4. Powerlines</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Thermal imaging and corona discharge detection to identify faulty insulators and prevent grid failures.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image-placeholder">
+                        <img src="images/oil storage tank.jpeg" alt="Industrial Oil Storage Tanks" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-cyan-400 font-bold uppercase mb-3">5. Oil Tank Storage Inspections</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Vacuum box testing and magnetic flux leakage to verify the safety of secondary containment systems.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image-placeholder">
+                        <img src="images/food industry ndt.jpg"" alt="Food Grade Stainless Steel Inspection" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-cyan-400 font-bold uppercase mb-3">6. Food Industry / Brewery</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Sanitary weld inspections for stainless steel tanks to ensure compliance with strict food safety standards.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image-placeholder">
+                        <img src="images/aviationndt.jpg" alt="Aircraft Turbine NDT" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-cyan-400 font-bold uppercase mb-3">7. Aviation</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Certified airframe and engine testing complying with international aviation safety regulations.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image-placeholder">
+                        <img src="images/hazarrrd.jpg" alt="Hazardous Environment Robots" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-cyan-400 font-bold uppercase mb-3">8. Hazardous Sites Clearing/Handling</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Technical oversight for decommissioning high-risk sites and structural integrity scanning.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image-placeholder">
+                        <img src="images/Material.jpg" alt="Metallurgical Material Analysis" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-cyan-400 font-bold uppercase mb-3">9. Material Inspections and Testing</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Detailed metallurgical analysis including hardness testing and chemical composition reports.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image-placeholder">
+                        <img src="images/tactical.jpg" alt="Cyber Tactical Defense Equipment" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-cyan-400 font-bold uppercase mb-3">10. Tactical & Specialized Systems</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">High-end scanning for defense hardware and ballistic shields for mission-critical projects.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image-placeholder">
+                        <img src="images/oilll.jpeg" alt="Environmental Oil Spill Response" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-cyan-400 font-bold uppercase mb-3">11. Oil Spillage Handling & Containment</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Technical oversight for emergency spill response. We utilize specialized scanning to detect leak sources and provide structural integrity verification for containment barriers and recovery equipment.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-section" class="py-20 px-6 bg-cyan-500 text-black">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
+            <div>
+                <h4 class="text-4xl font-black uppercase leading-none">Have an upcoming <br>critical project?</h4>
+                <p class="mt-4 font-bold tech-font uppercase text-xs tracking-widest">Get a certified technical proposal within 24 hours.</p>
+            </div>
+            <a href="tel:+254722629859" class="bg-black text-white px-12 py-6 font-black uppercase text-sm tracking-[0.2em] hover:bg-zinc-900 transition-all">Contact Us Now</a>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white text-black px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
+            <div class="p-10 border-4 border-black font-bold">
+                <p class="text-xl italic">"The precision of Scan Scope is unmatched in Kenya. Their ERESCO 4 unit is a game changer for our site safety."</p>
+                <span class="block mt-6 text-xs uppercase tracking-widest">— Lead Engineer, Energy Sector</span>
+            </div>
+            <div class="p-10 border-4 border-black font-bold">
+                <p class="text-xl italic">"Reliable, fast, and technically superior..."</p>
+                <span class="block mt-6 text-xs uppercase tracking-widest">— QA Head, Aerospace</span>
+            </div>
+        </div>
+    </section>
+</main> <main id="inventory" class="page">
+    <section class="py-32 px-6 bg-black">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-5xl font-black uppercase mb-12">Equipment <span class="text-cyan-400">Inventory</span></h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="inventory-card">
+                    <div class="tool-img-slot"><img src="images/images.jpg" alt="ERESCOM 4"></div>
+                    <h4 class="text-cyan-400 font-bold uppercase mt-6">ERESCOM 4</h4>
+                    <p class="text-gray-500 text-xs mt-3 leading-relaxed">A portable constant potential X-ray generator designed for heavy industrial penetration in the defense and energy sectors.</p>
+                </div>
+                <div class="inventory-card">
+                    <div class="tool-img-slot"><img src="images/crawler.jpeg" alt="Crawler"></div>
+                    <h4 class="text-cyan-400 font-bold uppercase mt-6">3E Pipeline Crawler</h4>
+                    <p class="text-gray-500 text-xs mt-3 leading-relaxed">Autonomous robotic imaging for internal pipeline health, capable of 360-degree weld scanning.</p>
+                </div>
+                <div class="inventory-card">
+                    <div class="tool-img-slot"><img src="images/phased array unit.jpeg" alt="PAUT"></div>
+                    <h4 class="text-cyan-400 font-bold uppercase mt-6">Phased Array Unit</h4>
+                    <p class="text-gray-500 text-xs mt-3 leading-relaxed">High-speed ultrasonic mapping used for complex geometries in aviation wing spars.</p>
+                </div>
+                <div class="inventory-card">
+                    <div class="tool-img-slot"><img src="images/magnetic particle.jpeg" alt="MPI"></div>
+                    <h4 class="text-cyan-400 font-bold uppercase mt-6">Magnetic Particle Yoke</h4>
+                    <p class="text-gray-500 text-xs mt-3 leading-relaxed">Surface discontinuity detection for bridge welds and structural steel infrastructure.</p>
+                </div>
+                <div class="inventory-card">
+                    <div class="tool-img-slot"><img src="images/digital dr.jpeg" alt="DR"></div>
+                    <h4 class="text-cyan-400 font-bold uppercase mt-6">Digital DR Panel</h4>
+                    <p class="text-gray-500 text-xs mt-3 leading-relaxed">Instant radiography results with high-resolution digital imaging for immediate QA approval.</p>
+                </div>
+                <div class="inventory-card">
+                    <div class="tool-img-slot"><img src="images/eddy current.jpeg" alt="ECT"></div>
+                    <h4 class="text-cyan-400 font-bold uppercase mt-6">Eddy Current Tester</h4>
+                    <p class="text-gray-500 text-xs mt-3 leading-relaxed">Electromagnetic testing for surface cracks in non-ferrous food-grade stainless steel tanks.</p>
+                </div>
+                <div class="inventory-card">
+                    <div class="tool-img-slot"><img src="images/hardness tester.jpeg" alt="UCI"></div>
+                    <h4 class="text-cyan-400 font-bold uppercase mt-6">Hardness Tester</h4>
+                    <p class="text-gray-500 text-xs mt-3 leading-relaxed">UCI hardness verification for metals post-chemical exposure or post-spill cleanup.</p>
+                </div>
+                <div class="inventory-card">
+                    <div class="tool-img-slot"><img src="images/holiday detector.jpeg" alt="Holiday"></div>
+                    <h4 class="text-cyan-400 font-bold uppercase mt-6">Holiday Detector</h4>
+                    <p class="text-gray-500 text-xs mt-3 leading-relaxed">High-voltage coating inspection to prevent pipeline corrosion and environmental leaks.</p>
+                </div>
+                <div class="inventory-card">
+                    <div class="tool-img-slot"><img src="images/video borescope.jpeg" alt="Borescope"></div>
+                    <h4 class="text-cyan-400 font-bold uppercase mt-6">Video Borescope</h4>
+                    <p class="text-gray-500 text-xs mt-3 leading-relaxed">Internal cavity inspection for turbine engines and narrow industrial piping systems.</p>
+                </div>
+                <div class="inventory-card">
+                    <div class="tool-img-slot"><img src="images/vacum box.jpeg" alt="Vacuum"></div>
+                    <h4 class="text-cyan-400 font-bold uppercase mt-6">Vacuum Box Tester</h4>
+                    <p class="text-gray-500 text-xs mt-3 leading-relaxed">Leak detection for storage tank bottoms to ensure fuel farm safety and compliance.</p>
+                </div>
+                <div class="inventory-card">
+                    <div class="tool-img-slot"><img src="images/cr scanner.jpg" alt="CP120"></div>
+                    <h4 class="text-cyan-400 font-bold uppercase mt-6">Computed Radiography Scanner</h4>
+                    <p class="text-gray-500 text-xs mt-3 leading-relaxed">High-resolution phosphor imaging plates used to replace traditional film.</p>
+                </div>
+                <div class="inventory-card">
+                    <div class="tool-img-slot"><img src="images/ultrasonic wall.jpeg" alt="UT"></div>
+                    <h4 class="text-cyan-400 font-bold uppercase mt-6">Ultrasonic Wall Gauge</h4>
+                    <p class="text-gray-500 text-xs mt-3 leading-relaxed">Wall thickness measurement for predicting corrosion rates in high-pressure vessels.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<main id="systems" class="page pt-32 px-6 pb-24">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-5xl font-black mb-12 uppercase italic text-cyan-400">The NDT Philosophy</h2>
+        
+        <div class="space-y-16">
+            <section>
+                <h3 class="text-2xl font-black uppercase mb-6 border-b border-white/10 pb-2">Client Value & Safety</h3>
+                <p class="text-gray-400 leading-relaxed mb-6">
+                    Non-Destructive Testing (NDT) is the backbone of industrial safety. At <strong>Scan Scope Technologies</strong>, we protect our clients' high-value assets by identifying microscopic flaws before they lead to catastrophic failure.
+                </p>
+                <div class="grid md:grid-cols-2 gap-8 mt-12">
+                    <div class="bg-zinc-900/50 p-8 border border-white/5">
+                        <h4 class="font-bold text-white uppercase mb-4">Risk Reduction</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">We prevent multimillion-dollar losses by detecting cracks and corrosion early in the asset lifecycle.</p>
+                    </div>
+                    <div class="bg-zinc-900/50 p-8 border border-white/5">
+                        <h4 class="font-bold text-white uppercase mb-4">Compliance</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">Our audits provide the certified data required for Aviation, Defense, and International Energy regulators.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3 class="text-2xl font-black uppercase mb-6 border-b border-white/10 pb-2">Our Process</h3>
+                <div class="space-y-8">
+                    <div class="flex gap-6">
+                        <span class="tech-font text-cyan-400 font-black text-xl">01</span>
+                        <div>
+                            <h5 class="font-bold uppercase">Field Mobilization</h5>
+                            <p class="text-gray-500 text-xs leading-relaxed">Rapid deployment of NDT units to remote sites, offshore platforms, or military zones.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <span class="tech-font text-cyan-400 font-black text-xl">02</span>
+                        <div>
+                            <h5 class="font-bold uppercase">Certified Inspection</h5>
+                            <p class="text-gray-500 text-xs leading-relaxed">Execution of audits using X-ray, UT, and Magnetic methods, verified by SNT-TC-1A certified engineers.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <span class="tech-font text-cyan-400 font-black text-xl">03</span>
+                        <div>
+                            <h5 class="font-bold uppercase">QA Approval</h5>
+                            <p class="text-gray-500 text-xs leading-relaxed">Final reporting through our Quality Assurance Manager for safe-to-operate certification.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</main>
+
+<footer class="bg-black pt-24 pb-12 px-6 border-t border-white/5">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-16">
+        <div>
+            <div class="sst-badge inline-block mb-6">SST</div>
+            <h3 class="text-2xl font-black uppercase mb-4">Scan Scope Tech</h3>
+            <div class="flex gap-4 mt-6">
+                <a href="#" class="text-xs font-bold tech-font text-cyan-400 uppercase">Facebook</a>
+                <a href="#" class="text-xs font-bold tech-font text-cyan-400 uppercase">LinkedIn</a>
+                <a href="#" class="text-xs font-bold tech-font text-cyan-400 uppercase">TikTok</a>
+            </div>
+        </div>
+        <div>
+            <h4 class="tech-font text-xs text-gray-500 uppercase tracking-widest mb-8">// Reach Us</h4>
+            <p class="text-sm mb-2">📍 Kilimani, Lenana Road / Cathy Flats</p>
+            <p class="text-sm mb-2">📞 +254 722 629 859</p>
+            <p class="text-sm mb-2">✉️ info@scanscope.co.ke</p>
+        </div>
+        <div class="bg-zinc-900 p-8">
+            <h4 class="text-xl font-black uppercase mb-4">Emergency Support</h4>
+            <a href="tel:+254722629859" class="block w-full bg-cyan-500 text-black text-center py-4 font-black uppercase text-xs">Direct Line</a>
+        </div>
+    </div>
+    <div class="mt-20 text-center text-[9px] text-gray-700 tech-font uppercase tracking-widest">
+        © 2026 Scan Scope Technologies | All Rights Reserved
+        Designed by RAADIIIX
+    </div>
+</footer>
+
+<div id="emergencyModal" class="hidden fixed inset-0 z-[1000] bg-black/95 items-center justify-center p-6">
+    <div class="bg-zinc-900 border-2 border-cyan-400 p-10 max-w-lg w-full relative">
+        <h2 class="text-3xl font-black text-cyan-400 uppercase italic">Crisis Protocol</h2>
+        <p class="text-gray-400 text-sm my-6">Immediate mobilization for hazardous sites. Engineer response in under 4 hours.</p>
+        <a href="tel:+254722629859" class="block w-full bg-cyan-500 text-black py-4 text-center font-black uppercase tracking-widest">Speak to Engineer</a>
+        <button onclick="closeEmergency()" class="absolute top-4 right-4 text-gray-500 hover:text-white">✕</button>
+    </div>
+</div>
+
+<a href="https://wa.me/254722629859" class="wa-float" target="_blank" title="Chat with Engineering">
+    <svg width="30" height="30" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.417-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.305 1.652zm6.599-3.835c1.401.832 2.975 1.271 4.587 1.272 5.238 0 9.502-4.265 9.505-9.504.001-2.538-.987-4.924-2.784-6.723-1.797-1.799-4.184-2.788-6.721-2.789-5.245 0-9.508 4.263-9.51 9.504-.001 1.616.43 3.191 1.246 4.593l-.994 3.635 3.72-.976-.047.027zm10.74-7.056c-.333-.167-1.969-.972-2.274-1.082-.305-.11-.527-.167-.749.167-.221.334-.86 1.083-1.054 1.306-.194.222-.389.25-.722.083-.333-.167-1.404-.518-2.675-1.651-.989-.882-1.657-1.972-1.851-2.306-.194-.334-.021-.515.145-.681.15-.15.333-.389.5-.583.167-.194.222-.333.333-.556.11-.222.056-.417-.028-.583-.083-.167-.749-1.806-1.026-2.472-.271-.652-.544-.564-.749-.575l-.638-.012c-.222 0-.583.083-.889.417-.305.333-1.166 1.139-1.166 2.778 0 1.639 1.194 3.222 1.361 3.444.167.222 2.35 3.589 5.692 5.039.795.344 1.416.55 1.9.707.797.253 1.524.217 2.097.132.639-.094 1.969-.806 2.247-1.583.278-.778.278-1.444.194-1.583-.083-.139-.305-.222-.638-.389z"/></svg>
+</a>
+
+<script src="app.js"></script>
+</body>
+</html>
